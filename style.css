@@ -8,7 +8,7 @@
 }
 
 body{
-    background-image: url(./public/images/movies.JPG);
+    background-image: url(./public/image/movies.JPG);
     background-position: top center;
     height: 100vh;
     padding:5px;
