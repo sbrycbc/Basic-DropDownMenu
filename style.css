@@ -1,0 +1,106 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: url(./public/images/movies.JPG);
+    background-position: top center;
+    height: 100vh;
+    padding:5px;
+}
+
+
+h1{
+    text-align: center;
+    background-color: aqua;
+    font-style: italic;
+    font-family:monospace;
+    height: 4.3rem;
+    padding: 19px;
+    margin-bottom: 10px;
+  }
+
+.navbar{
+	width: 100%;
+	height: 60px;
+	background: black;
+}
+
+.navbar > ul{
+	display: flex;
+	justify-content:center;	
+}
+
+.navbar ul li{
+	position: relative;
+}
+
+.navbar ul li a{
+	display: block;
+    color: aqua;
+    height:60px;
+    width: 190px;
+    text-align: center;
+    padding: 20px 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.navbar ul > li a{
+	margin-right:3px;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.movies.active{
+    background: aqua;
+    color: black;
+}
+
+.navbar .actors ul li a:hover,
+.navbar .actors ul li a.active{
+    background: aqua;
+    color:blueviolet;
+	
+}
+
+.navbar .actors{
+	position: absolute;
+	top: 80px;
+	left: 0;
+	display: none;
+}
+
+.navbar .actors ul li a{
+	width: 180px;
+    border-radius:15px;
+	background: rgb(212, 219, 219);
+	text-align: center;	
+	padding: 10px;
+    margin: 5px;
+    color: black;
+}
+
+.navbar .actors:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border: 15px solid;
+    border-color: transparent transparent rgb(212, 219, 219)transparent;
+}
+
+.navbar ul li a.movies.active + .actors{
+	display: block;
+}
+
+.navbar ul li a.actors_a.active{
+	display: block;
+}
